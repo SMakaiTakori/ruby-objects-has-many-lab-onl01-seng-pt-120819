@@ -1,6 +1,8 @@
 class Author
 
   attr_accessor :name
+  
+  
 
   def initialize(name)
     @name = name
@@ -25,8 +27,8 @@ class Author
     Post.all.select {|post| post.author == self}
   end  
   
-  def post_count
-  
+  def self.post_count
+    @@post_count
   end  
   
 end  
