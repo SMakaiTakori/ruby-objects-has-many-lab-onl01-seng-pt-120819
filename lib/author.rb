@@ -25,7 +25,15 @@ class Author
     Post.all.select {|post| post.author == self}
   end  
   
-  
+  def posts_by_title
+    authors_posts = []
+    Post.all_by_title.each do |post|
+      if post.author == self 
+        authors_posts << post.title 
+      end  
+    end
+    authors_posts
+  end 
   
   def self.post_count
     @@post_count
