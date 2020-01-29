@@ -3,11 +3,12 @@ class Post
   attr_accessor :title, :author
   
   @@all = []
+  @@all_by_title = []
  
   def initialize(title)
     @title = title
     @@all << self
-    @@all_by_title = []
+    @@all_by_title << self
     
   end  
   
