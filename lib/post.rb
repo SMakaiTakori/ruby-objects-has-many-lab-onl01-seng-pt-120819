@@ -7,6 +7,7 @@ class Post
   def initialize(title)
     @title = title
     @@all << self
+    @@add_post_by_title << self
     
   end  
   
