@@ -21,5 +21,8 @@ class Post
     self.author ? self.author.name : nil
   end  
   
+   def self.all_by_title
+    @@all_by_title
+  end 
   
 end  
