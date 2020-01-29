@@ -8,6 +8,7 @@ class Author
   
   def add_post(post)
     self.posts << post
+    post.author = self
     
       
   end  
