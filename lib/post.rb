@@ -19,5 +19,9 @@ class Post
   def author_name
     self.author ? self.author.name : nil
   end  
+  
+  def self.add_post_by_title
+    @@add_post_by_title
+  end  
 
 end  
