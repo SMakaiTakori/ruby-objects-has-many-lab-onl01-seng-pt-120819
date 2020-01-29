@@ -12,6 +12,6 @@ class Author
   end  
   
   def posts
-    @posts
+    Post.all.select {|post| }
   end  
 end  
