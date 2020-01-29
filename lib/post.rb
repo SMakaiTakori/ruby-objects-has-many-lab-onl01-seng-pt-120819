@@ -3,12 +3,10 @@ class Post
   attr_accessor :title, :author
   
   @@all = []
-  @@add_post_by_title = []
-  
+ 
   def initialize(title)
     @title = title
     @@all << self
-    @@add_post_by_title << self
     
   end  
   
@@ -20,8 +18,5 @@ class Post
     self.author ? self.author.name : nil
   end  
   
-  def self.add_post_by_title
-    @@add_post_by_title
-  end  
-
+  
 end  
