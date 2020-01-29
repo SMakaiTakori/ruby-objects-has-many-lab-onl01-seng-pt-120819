@@ -25,7 +25,7 @@ class Artist
   end  
   
   def songs
-    songs.all.select { |song| post.author == self }
+    Artist.all.select { |song| post.author == self }
     @songs
   end
   
