@@ -5,7 +5,7 @@ class Post
   @@all = []
   @@all_by_title = []
  
-  def initialize(title, author)
+  def initialize(title, author = nil)
     @title = title
     @author = author
     @@all << self
