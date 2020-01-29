@@ -17,7 +17,7 @@ class Author
     post = Post.new(title, self)
     self.posts << post 
     post.author = self
-    posts
+    posts << 
     
   end
   
